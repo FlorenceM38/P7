@@ -1,0 +1,69 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(./polices/Montserrat-Light.ttf);
+    src: url(./polices/Montserrat-Medium.ttf);
+    src: url(./polices/Montserrat-Thin.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.banner {
+    min-width: 80%;
+    max-width: 80%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    background-color: black;
+    border-radius: 25px;
+    margin-left: 10%;
+}
+
+.backgroundBanner {
+    border-radius: 25px;
+    width: 100%;
+    opacity: 0.7;
+    
+
+}
+
+.h2Banner {
+    color: white;
+    font-size: 46px;
+    font-family: Montserrat;
+    position: absolute;
+}
+
+.retourLigneBanner {
+    display: none;
+}
+
+@media screen and (max-width: 400px) {
+
+    .banner {
+        border-radius: 10px;
+        margin-left: 5%;
+        min-width: 90%;
+        height: 111px;
+        justify-content: flex-start;
+    }
+
+    .backgroundBanner {
+        border-radius: 10px;
+        object-fit: cover;
+        height: 111px;
+        
+    
+    }
+
+    .h2Banner {
+        font-size: 24px;
+        
+    }
+
+    .retourLigneBanner {
+        display: flex;
+    }
+}

@@ -1,10 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Home from './pages/home'
+import Home from './pages/Home'
+import About from './pages/About'
+//import Logement from '/pages/Logement'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import Error from './components/Error'
+import Error from './pages/404'
+import './styles/index.css'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -12,6 +15,8 @@ ReactDOM.render(
       <Header />
       <Routes>
         <Route path="/pages/home" element={<Home />} />
+        <Route path="/pages/about" element={<About />} />
+        {/*<Route path="/pages/logement" element={<Logement />} />*/}
         <Route path="*" element={<Error />} />
       </Routes>
     </Router>

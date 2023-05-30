@@ -30,6 +30,7 @@
     width: 309px;
     height: 34px;
     list-style-type: none;
+    padding-left: 0;
     
 }
 
@@ -46,7 +47,7 @@
 
 @media screen and (max-width: 900px) {
     .header {
-        width: 100%;
+        
         margin: 30px;
         
     }
@@ -56,6 +57,13 @@
         font-size: 18px;
     }
 
+    .navigationUl {
+        justify-content: space-around;
+        width: 250px;
+        
+    }
+
+
 }
 
 
@@ -63,8 +71,8 @@
 
 @media screen and (max-width: 400px) {
     .header {
-        width: 100%;
-        margin: 20px;
+        
+        margin: 5px;
         
         
     }
@@ -77,6 +85,7 @@
     .navigationUl {
         width: 140px;
         height: 18px;
+        gap: 12px;
         
     }
 
