@@ -1,14 +1,15 @@
 import React from 'react'
 import Banner from '../components/Banner'
 import Card from '../components/Card'
-import { logements } from '../datas/logements.json'
+import Logements from '../datas/logements.json'
+import '../styles/home.css'
 
 function Home() {
   return (
     <section>
       <Banner />
       <div>
-        {logements.map((logements) => {
+        {Logements.map((logements) => {
           return (
             <Card
               key={logements.id}
