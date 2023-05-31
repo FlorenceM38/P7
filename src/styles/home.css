@@ -11,3 +11,18 @@
     flex-wrap: wrap;
 
 }
+
+@media screen and (max-width: 900px) {
+    .home {
+        min-width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .home {
+        background-color: rgb(255, 255, 255);
+        min-width: 90%;
+    }
+}

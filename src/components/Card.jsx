@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/card.css'
-import Logements from '../datas/logements.json'
 
 function Card({ title, id, cover }) {
   return (

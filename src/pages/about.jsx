@@ -1,5 +1,12 @@
+import React from 'react'
+import BannerAbout from '../components/BannerAbout'
+
 function About() {
-  return <div></div>
+  return (
+    <div>
+      <BannerAbout />
+    </div>
+  )
 }
 
 export default About
