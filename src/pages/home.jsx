@@ -8,7 +8,7 @@ function Home() {
   return (
     <section>
       <Banner />
-      <div>
+      <div className="home">
         {Logements.map((logements) => {
           return (
             <Card
