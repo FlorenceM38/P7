@@ -8,10 +8,10 @@ function Navigation() {
   return (
     <div>
       <ul className="navigationUl">
-        <Link to="./pages/home" className="navigationLi">
+        <Link to="/" className="navigationLi">
           <li>Accueil</li>
         </Link>
-        <Link to="./pages/about" className="navigationLi">
+        <Link to="/about" className="navigationLi">
           <li>A Propos</li>
         </Link>
       </ul>

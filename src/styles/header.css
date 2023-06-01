@@ -69,10 +69,10 @@
 
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .header {
         
-        margin: 5px;
+        margin: 25px 30px;
         
         
     }
