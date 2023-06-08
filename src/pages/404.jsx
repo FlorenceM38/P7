@@ -10,7 +10,7 @@ function Error() {
         Oups! La page que <br className="retourLigne404" /> vous demandez
         n'existe pas.
       </p>
-      <Link to={'./pages/home'} className="lien404">
+      <Link to={'/'} className="lien404">
         Retourner sur la page d'accueil
       </Link>
     </div>

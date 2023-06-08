@@ -1,0 +1,39 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(./polices/Montserrat-Light.ttf);
+    src: url(./polices/Montserrat-Medium.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.collapse { 
+    margin-top: 25px;
+    background-color: #F7F7F7;
+    border-radius: 5px;
+    
+}
+
+.collapseH3 {
+    background: #FF6060;
+border-radius: 5px;
+margin: 0;
+color: white;
+font-size: 24px;
+font-family: Montserrat;
+font-weight: 500;
+height: 47px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-left: 15px;
+padding-right: 15px;
+}
+
+.collapseP {
+    color: #FF6060;
+font-size: 22px;
+font-family: Montserrat;
+font-weight: 400;
+padding-left: 15px;
+padding-right: 15px;
+}
