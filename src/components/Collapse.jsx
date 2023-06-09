@@ -1,8 +1,6 @@
 import { useState } from 'react'
 
-import arrowTop from '../assets/arrowTop.png'
-
-import arrowBottom from '../assets/arrowBottom.png'
+import arrow from '../assets/arrow.png'
 
 import '../styles/collapse.css'
 
@@ -10,21 +8,27 @@ function Collapse({ title, description }) {
   const [isOpen, setIsOpen] = useState(false)
   let classList = ''
   if (isOpen) {
-    classList = 'collapse openCollapse'
+    classList = 'collapseopenCollapse'
   } else {
-    classList = 'collapse closedCollapse'
+    classList = 'collapseclosedCollapse'
   }
+
+  let classListImg = ''
+  if (isOpen) {
+    classListImg = 'collapseopenCollapseimg'
+  } else {
+    classListImg = 'collapseclosedCollapseimg'
+  }
+
   return (
-    <div className={classList}>
+    <div className="collapse">
       <h3 className="collapseH3" onClick={() => setIsOpen(!isOpen)}>
         {title}
-        <img
-          className="collapseArrow"
-          src={arrowBottom}
-          alt="voir la description"
-        />
+        <img className={classListImg} src={arrow} alt="voir la description" />
       </h3>
-      <p className="collapseP">{description}</p>
+      <div className={classList}>
+        <p className="collapseP">{description}</p>
+      </div>
     </div>
   )
 }

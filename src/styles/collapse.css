@@ -8,10 +8,10 @@
 
 .collapse { 
     margin-top: 25px;
-    background-color: #F7F7F7;
     border-radius: 5px;
     
 }
+
 
 .collapseH3 {
     background: #FF6060;
@@ -36,4 +36,64 @@ font-family: Montserrat;
 font-weight: 400;
 padding-left: 15px;
 padding-right: 15px;
+}
+
+.collapseclosedCollapseimg {
+    transition: transform 1000ms;
+    transform: rotate(180deg);
+}
+
+.collapseopenCollapseimg {
+    transition: transform 1000ms;
+    transform: rotate(360deg);
+}
+
+.collapseclosedCollapse {
+    transform: translate(0, -60px);
+    background-color: white;
+    opacity: 0;
+    z-index: -20;
+    position: relative;
+    height: 10px;
+    transition-duration: 600ms;
+    
+} 
+
+.collapseopenCollapse {
+    background-color: #F7F7F7;
+    padding: 15px;
+    border-radius: 0px 0px 5px 5px  ;
+    
+
+}
+
+@media screen and (max-width: 900px) {
+    .collapseH3 {
+        font-size: 20px;
+        height: 40px;
+        }
+        
+        .collapseP {
+        font-size: 18px;
+        font-weight: 400;
+        padding-left: 10px;
+    padding-right: 10px;
+        }
+
+}
+
+
+@media screen and (max-width: 480px) {
+    .collapseH3 {
+    font-size: 13px;
+    height: 30px;
+    }
+    
+    .collapseP {
+    font-size: 12px;
+    font-weight: 400;
+    padding-left: 10px;
+padding-right: 10px;
+    }
+
 }

@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 
 import '../styles/header.css'
 
+import '../styles/about.css'
+
 function Navigation() {
   return (
     <div>
