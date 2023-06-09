@@ -8,9 +8,14 @@ import '../styles/collapse.css'
 
 function Collapse({ title, description }) {
   const [isOpen, setIsOpen] = useState(false)
-
+  let classList = ''
+  if (isOpen) {
+    classList = 'collapse openCollapse'
+  } else {
+    classList = 'collapse closedCollapse'
+  }
   return (
-    <div className="collapse">
+    <div className={classList}>
       <h3 className="collapseH3" onClick={() => setIsOpen(!isOpen)}>
         {title}
         <img
