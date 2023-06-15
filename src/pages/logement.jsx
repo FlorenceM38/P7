@@ -1,17 +1,26 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import logements from '../datas/logements.json'
-import Gallery from '../components/Gallery'
+import Carrousel from '../components/Carrousel'
 import '../styles/logements.css'
+import Error from '../pages/404'
+import axios from 'axios'
 
 function Logement() {
   const { id } = useParams()
   const logement = logements.find((log) => log.id === id)
+
+  if (!logement) {
+    return <Error />
+  }
+
   return (
     <section>
       <div className="logement">
-        <Gallery />
-        <h1>{logement.title}</h1>
+        <Carrousel />
+        <div>
+          <h1>{logement.title}</h1>
+        </div>
       </div>
     </section>
   )
