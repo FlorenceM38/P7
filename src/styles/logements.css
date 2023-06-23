@@ -13,4 +13,13 @@
     font-weight: 500;
     font-size: 18px;
     
+
+}
+
+.section2Logement {
+    display: flex;
+}
+
+.hostLogement {
+    display: flex;
 }

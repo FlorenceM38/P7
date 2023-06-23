@@ -20,10 +20,18 @@ function Logement() {
       <div className="logement">
         <Carrousel imagesCarrousel={logement.pictures} />
         <div>
-          <div>
-            <h1 className="h1Logement">{logement.title}</h1>
-            <p className="locationLogement">{logement.location}</p>
-            <Tag index={logement.tags} tag={logement.tags} />
+          <div className="section2Logement">
+            <div>
+              <h1 className="h1Logement">{logement.title}</h1>
+              <h2 className="locationLogement">{logement.location}</h2>
+              <Tag index={logement.tags} tag={logement.tags} />
+            </div>
+            <div>
+              <div className="hostLogement">
+                <p>{logement.host.name}</p>
+                <img src={logement.host.picture} alt="visage du propriétaire" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
