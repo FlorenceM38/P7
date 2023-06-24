@@ -1,6 +1,6 @@
 .h1Logement {
-    margin-left: 5%;
-    margin-top: 30px;
+    
+    
     margin-bottom: 0px;
     font-size: 36px;
     font-weight: 500;
@@ -8,7 +8,7 @@
 }
 
 .locationLogement {
-    margin-left: 5%;
+    
     color: #FF6060;
     font-weight: 500;
     font-size: 18px;
@@ -18,8 +18,30 @@
 
 .section2Logement {
     display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .hostLogement {
     display: flex;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.hostNameLogement {
+    font-size: 18px;
+    color: #FF6060;
+    width: 93px;
+    
+    
+}
+
+.hostPictureLogement {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    background-color: #C4C4C4;
+
 }

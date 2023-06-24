@@ -28,8 +28,12 @@ function Logement() {
             </div>
             <div>
               <div className="hostLogement">
-                <p>{logement.host.name}</p>
-                <img src={logement.host.picture} alt="visage du propriétaire" />
+                <p className="hostNameLogement">{logement.host.name}</p>
+                <img
+                  className="hostPictureLogement"
+                  src={logement.host.picture}
+                  alt="visage du propriétaire"
+                />
               </div>
             </div>
           </div>

@@ -1,7 +1,5 @@
 .containerTag {
     display: flex;
-    margin-left: 5%;
-    
     flex-wrap: wrap;
     
 }
