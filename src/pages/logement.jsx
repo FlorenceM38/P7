@@ -2,6 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import logements from '../datas/logements.json'
 import Carrousel from '../components/Carrousel'
+import Rating from '../components/Rating'
 import Tag from '../components/Tag'
 import '../styles/logements.css'
 import Error from '../pages/404'
@@ -35,6 +36,7 @@ function Logement() {
                   alt="visage du propriétaire"
                 />
               </div>
+              <Rating />
             </div>
           </div>
         </div>

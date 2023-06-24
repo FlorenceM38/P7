@@ -6,7 +6,9 @@ function Tag({ tag }) {
   return (
     <div className="containerTag">
       {tag.map((t) => (
-        <div className="tag">{t}</div>
+        <div className="tag" key={Math.random()}>
+          {t}
+        </div>
       ))}
     </div>
   )
