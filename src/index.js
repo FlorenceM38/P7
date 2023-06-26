@@ -28,7 +28,7 @@ ReactDOM.render(
 */
 
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { createRoot } from 'react-dom/client'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
@@ -39,7 +39,9 @@ import Error from './pages/404'
 import './styles/index.css'
 //import './styles/loady.css'
 
-ReactDOM.render(
+const root = document.getElementById('root')
+
+createRoot(root).render(
   <React.StrictMode>
     <Router>
       <Header />
@@ -51,6 +53,5 @@ ReactDOM.render(
       </Routes>
     </Router>
     <Footer />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 )

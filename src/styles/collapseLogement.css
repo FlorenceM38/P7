@@ -1,0 +1,12 @@
+.containerCollapseLogement {
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.collapseLogement {
+    width: 47%;
+    
+}

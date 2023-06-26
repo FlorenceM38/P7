@@ -4,7 +4,9 @@ import logements from '../datas/logements.json'
 import Carrousel from '../components/Carrousel'
 import Rating from '../components/Rating'
 import Tag from '../components/Tag'
+import Collapse from '../components/Collapse'
 import '../styles/logements.css'
+import '../styles/collapseLogement.css'
 import Error from '../pages/404'
 import axios from 'axios'
 
@@ -38,6 +40,17 @@ function Logement() {
               </div>
               <Rating />
             </div>
+          </div>
+        </div>
+        <div className="containerCollapseLogement">
+          <div className="collapseLogement">
+            <Collapse
+              title={'Description'}
+              description={logement.description}
+            />
+          </div>
+          <div className="collapseLogement">
+            <Collapse title={'Équipement'} description={logement.equipments} />
           </div>
         </div>
       </div>
