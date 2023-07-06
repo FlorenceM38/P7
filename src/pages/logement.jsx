@@ -19,17 +19,9 @@ function Logement() {
   const logement = logements.find((log) => log.id === id)
   const navigate = useNavigate()
 
-  useEffect(() => {
-    if (!logement) {
-      navigate('./')
-    }
-  })
-
-  /*
   if (!logement) {
     return <Error />
   }
-*/
 
   return (
     <section>
