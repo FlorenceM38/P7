@@ -2,3 +2,12 @@
     display: flex;
     width: 200px ;
     }
+
+    @media screen and (max-width: 480px) {
+        .rating {
+            width: 98px;
+            height: 18px;
+            margin-top: 0;
+        }
+
+    }

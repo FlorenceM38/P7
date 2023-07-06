@@ -2,45 +2,35 @@ import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import logements from '../datas/logements.json'
 import Carrousel from '../components/Carrousel'
-//import Rating from '../components/Rating'
 import Tag from '../components/Tag'
 import Collapse from '../components/Collapse'
 import '../styles/logements.css'
 import '../styles/collapseLogement.css'
 import Error from '../pages/404'
-//import axios from 'axios'
 import '../styles/rating.css'
 
 import starActive from '../assets/starActive.png'
 import starInactive from '../assets/starInactive.png'
 
+import { useNavigate } from 'react-router-dom'
+
 function Logement() {
   const { id } = useParams()
   const logement = logements.find((log) => log.id === id)
+  const navigate = useNavigate()
 
+  useEffect(() => {
+    if (!logement) {
+      navigate('./')
+    }
+  })
+
+  /*
   if (!logement) {
     return <Error />
   }
-
-  /*
-const { id } = useParams()
-const navigate = useNavigate()
-const logement = 
-
-useEffect(() => {
-  if (!logement) {
-    navigate("/404")
-  }
-}, [logement])
 */
-  /*
-  React.useEffect(() => {
-    axios
-      .get('../datas/logements.json')
-      .then((res) => setLogement(res.logement))
-      .catch(<Error />)
-  })
-*/
+
   return (
     <section>
       <div className="logement">

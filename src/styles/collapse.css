@@ -38,6 +38,17 @@ padding-left: 15px;
 padding-right: 15px;
 }
 
+.collapseLi {
+    color: #FF6060;
+    font-size: 22px;
+    font-family: Montserrat;
+    font-weight: 400;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 5px;
+
+}
+
 .collapseclosedCollapseimg {
     transition: transform 1000ms;
     transform: rotate(180deg);
@@ -80,6 +91,11 @@ padding-right: 15px;
     padding-right: 10px;
         }
 
+        .collapseLi {
+            font-size: 18px;
+            padding: 0;
+        }
+
 }
 
 
@@ -96,4 +112,10 @@ padding-right: 15px;
 padding-right: 10px;
     }
 
+    .collapseLi {
+        font-size: 12px;
+        padding: 0;
+    }
+
+    
 }

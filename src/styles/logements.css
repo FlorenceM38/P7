@@ -49,3 +49,75 @@
 .containerHostRating { 
     width: 200px;
 }
+
+
+@media screen and (max-width: 900px) {
+    .section2Logement {
+        flex-direction: column;
+    }
+
+    .h1Logement {font-size: 25px;}
+
+    .containerHostRating {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+
+    .containerCollapseLogement {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .collapseLogement {
+        min-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .section2Logement {
+        flex-direction: column;
+    }
+
+    .h1Logement {font-size: 18px;}
+
+    .locationLogement {
+        font-size: 14px;
+    }
+
+    .containerHostRating {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+
+    .hostNameLogement {
+        font-size: 12px;
+        width: 63px;
+
+    }
+
+    .hostPictureLogement {
+        height: 32px;
+        width: 32px;
+    }
+
+    .hostLogement {
+        justify-content: space-between;
+        margin-top: 0;
+    } 
+
+    .containerCollapseLogement {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .collapseLogement {
+        min-width: 100%;
+    }
+}

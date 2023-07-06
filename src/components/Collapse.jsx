@@ -6,6 +6,7 @@ import '../styles/collapse.css'
 
 function Collapse({ title, description }) {
   const [isOpen, setIsOpen] = useState(false)
+
   let classList = ''
   if (isOpen) {
     classList = 'collapseopenCollapse'
@@ -27,7 +28,17 @@ function Collapse({ title, description }) {
         <img className={classListImg} src={arrow} alt="voir la description" />
       </h3>
       <div className={classList}>
-        <p className="collapseP">{description}</p>
+        {Array.isArray(description) ? (
+          description.map((line, key) => {
+            return (
+              <p className="collapseLi" key={key}>
+                {line}
+              </p>
+            )
+          })
+        ) : (
+          <p className="collapseP">{description}</p>
+        )}
       </div>
     </div>
   )
