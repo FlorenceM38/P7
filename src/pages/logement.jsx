@@ -1,14 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import logements from '../datas/logements.json'
 import Carrousel from '../components/Carrousel'
-import Rating from '../components/Rating'
+//import Rating from '../components/Rating'
 import Tag from '../components/Tag'
 import Collapse from '../components/Collapse'
 import '../styles/logements.css'
 import '../styles/collapseLogement.css'
 import Error from '../pages/404'
-import axios from 'axios'
+//import axios from 'axios'
+import '../styles/rating.css'
+
+import starActive from '../assets/starActive.png'
+import starInactive from '../assets/starInactive.png'
 
 function Logement() {
   const { id } = useParams()
@@ -18,6 +22,25 @@ function Logement() {
     return <Error />
   }
 
+  /*
+const { id } = useParams()
+const navigate = useNavigate()
+const logement = 
+
+useEffect(() => {
+  if (!logement) {
+    navigate("/404")
+  }
+}, [logement])
+*/
+  /*
+  React.useEffect(() => {
+    axios
+      .get('../datas/logements.json')
+      .then((res) => setLogement(res.logement))
+      .catch(<Error />)
+  })
+*/
   return (
     <section>
       <div className="logement">
@@ -29,7 +52,7 @@ function Logement() {
               <h2 className="locationLogement">{logement.location}</h2>
               <Tag index={logement.tags} tag={logement.tags} />
             </div>
-            <div>
+            <div className="containerHostRating">
               <div className="hostLogement">
                 <p className="hostNameLogement">{logement.host.name}</p>
                 <img
@@ -38,7 +61,20 @@ function Logement() {
                   alt="visage du propriétaire"
                 />
               </div>
-              <Rating />
+              <div className="rating">
+                {[...Array(5)].map((star, index) => {
+                  const ratingV = index + 1
+                  return (
+                    <img
+                      key={index}
+                      src={
+                        ratingV <= logement.rating ? starActive : starInactive
+                      }
+                      alt="note"
+                    />
+                  )
+                })}
+              </div>
             </div>
           </div>
         </div>
