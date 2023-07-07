@@ -29,7 +29,7 @@
 }
 
 .card:hover {
-    scale: 1.02;
+    transform: scale(1.02);
     transition-duration: 600ms;
     box-shadow: 2px 2px 5px 0px #000000;
 }
@@ -46,7 +46,7 @@
 }
 
 .h3Card:hover {
-    scale: 1.02;
+transform: scale(1.02);
     transition-duration: 600ms;
     
 }
