@@ -108,6 +108,13 @@ padding-right: 15px;
             padding: 0;
         }
 
+        .collapsePLogement {
+           font-size: 18px;
+            font-weight: 400;
+            padding-left: 10px;
+        padding-right: 10px;;
+        }
+
 }
 
 
@@ -127,6 +134,11 @@ padding-right: 10px;
     .collapseLi {
         font-size: 12px;
         padding: 0;
+    }
+
+    .collapsePLogement {
+        font-size: 12px;
+
     }
 
     

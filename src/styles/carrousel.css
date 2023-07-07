@@ -46,3 +46,41 @@ border-radius: 25px;
     width: 0;
     height: 0;
 }
+
+
+@media screen and (max-width: 900px) {
+    .imgCarrousel {
+        height: 350px;
+        border-radius: 15px;
+    }
+
+    .chevronLeft {height: 75px;}
+
+    .chevronRight {height: 75px;}
+
+    .arrowCarrousel { margin-top: 155px;}
+
+}
+
+@media screen and (max-width: 480px) {
+    .imgCarrousel {
+        height: 255px;
+        border-radius: 10px;
+    }
+
+
+    .chevronLeft {height: 24px;}
+
+    .chevronRight {height: 24px;}
+
+    .arrowCarrousel {
+
+        margin-top: 130px;
+    }
+
+    .counterImages {
+        width: 0;
+        height: 0;
+    }
+
+}

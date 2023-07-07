@@ -12,16 +12,19 @@ import '../styles/rating.css'
 import starActive from '../assets/starActive.png'
 import starInactive from '../assets/starInactive.png'
 
-import { useNavigate } from 'react-router-dom'
+import { Navigate } from 'react-router-dom'
 
 function Logement() {
   const { id } = useParams()
   const logement = logements.find((log) => log.id === id)
-  const navigate = useNavigate()
 
-  if (!logement) {
-    return <Error />
+  if (logement === undefined) {
+    return <Navigate to="./404" />
   }
+
+  /*if (!logement) {
+    return <Error />
+  }*/
 
   return (
     <section>
