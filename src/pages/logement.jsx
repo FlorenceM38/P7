@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useParams } from 'react-router-dom'
 import logements from '../datas/logements.json'
 import Carrousel from '../components/Carrousel'
@@ -6,7 +6,6 @@ import Tag from '../components/Tag'
 import Collapse from '../components/Collapse'
 import '../styles/logements.css'
 import '../styles/collapseLogement.css'
-import Error from '../pages/404'
 import '../styles/rating.css'
 
 import starActive from '../assets/starActive.png'
