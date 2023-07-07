@@ -41,3 +41,8 @@ border-radius: 25px;
     color: white;
     font-weight: 500;
 }
+
+.arrowCarrouselInvisible {
+    width: 0;
+    height: 0;
+}

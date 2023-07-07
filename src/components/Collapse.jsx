@@ -1,10 +1,14 @@
 import { useState } from 'react'
 
+import { useLocation } from 'react-router-dom'
+
 import arrow from '../assets/arrow.png'
 
 import '../styles/collapse.css'
 
 function Collapse({ title, description }) {
+  const pathName = useLocation().pathname
+
   const [isOpen, setIsOpen] = useState(false)
 
   let classList = ''
@@ -37,7 +41,13 @@ function Collapse({ title, description }) {
             )
           })
         ) : (
-          <p className="collapseP">{description}</p>
+          <p
+            /*className="collapseP"*/ className={
+              pathName === '/about' ? 'collapseP' : 'collapsePLogement'
+            }
+          >
+            {description}
+          </p>
         )}
       </div>
     </div>

@@ -31,7 +31,7 @@ padding-right: 15px;
 
 .collapseP {
     color: #FF6060;
-font-size: 22px;
+font-size: 24px;
 font-family: Montserrat;
 font-weight: 400;
 padding-left: 15px;
@@ -40,7 +40,7 @@ padding-right: 15px;
 
 .collapseLi {
     color: #FF6060;
-    font-size: 22px;
+    font-size: 18px;
     font-family: Montserrat;
     font-weight: 400;
     padding-left: 15px;
@@ -77,6 +77,18 @@ padding-right: 15px;
     
 
 }
+
+.collapsePLogement {
+    color: #FF6060;
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: 400;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+
 
 @media screen and (max-width: 900px) {
     .collapseH3 {

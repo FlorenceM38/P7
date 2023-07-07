@@ -28,7 +28,13 @@ function Carrousel({ imagesCarrousel }) {
           alt="photos du logement"
         />
       </div>
-      <div className="arrowCarrousel">
+      <div
+        className={
+          imagesCarrousel.length === 1
+            ? 'arrowCarrouselInvisible'
+            : 'arrowCarrousel'
+        }
+      >
         <img
           className="chevronLeft"
           src={chevronLeft}
