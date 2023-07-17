@@ -74,6 +74,17 @@
         
     }
 
+    .navigationLiActive {
+        color: #FF6060;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: Montserrat;
+        text-decoration-line: underline;
+    
+    }
+
+    
+
 
 }
 
@@ -105,6 +116,18 @@
         font-size: 12px;
         
     }
+
+    .navigationLiActive {
+        color: #FF6060;
+        text-decoration: none;
+        font-size: 12px;
+        font-family: Montserrat;
+        text-decoration-line: underline;
+    
+    }
+
+    
+
 
     
 }
