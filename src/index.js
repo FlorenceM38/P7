@@ -8,7 +8,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Error from './pages/404'
 import './styles/index.css'
-//import './styles/loady.css'
+
 
 ReactDOM.render(
   <React.StrictMode>
@@ -37,7 +37,6 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Error from './pages/404'
 import './styles/index.css'
-//import './styles/loady.css'
 
 const root = document.getElementById('root')
 
