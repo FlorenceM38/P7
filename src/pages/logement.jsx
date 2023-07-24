@@ -7,6 +7,7 @@ import Collapse from '../components/Collapse'
 import '../styles/logements.css'
 import '../styles/collapseLogement.css'
 import '../styles/rating.css'
+//
 
 import starActive from '../assets/starActive.png'
 import starInactive from '../assets/starInactive.png'
