@@ -4,6 +4,7 @@ import starActive from '../assets/starActive.png'
 import starInactive from '../assets/starInactive.png'
 
 function Rating({ rate }) {
+  // eslint-disable-next-line no-lone-blocks
   {
     ;[...Array(5)].map((star, index) => {
       const ratingV = index + 1
